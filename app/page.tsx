@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { PatientForm } from "@/components/forms/PatientForm";
+// import { PatientForm } from "@/components/forms/PatientForm";
+import { UserRegisterForm } from "@/components/forms/UserRegisterForm";
 import { PasskeyModal } from "@/components/PasskeyModal";
 
 const Home = ({ searchParams }: SearchParamProps) => {
@@ -21,7 +22,8 @@ const Home = ({ searchParams }: SearchParamProps) => {
             className="mb-12 h-10 w-fit"
           />
 
-          <PatientForm />
+          {/* <PatientForm /> */}
+          <UserRegisterForm />
 
           <div className="text-14-regular mt-20 flex justify-between">
             <p className="justify-items-end text-dark-600 xl:text-left">
