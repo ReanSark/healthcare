@@ -24,10 +24,10 @@ export const UserRegisterForm = () => {
   const form = useForm<z.infer<typeof UserRegisterFormValidation>>({
     resolver: zodResolver(UserRegisterFormValidation),
     defaultValues: {
+      role: "Receptionist",
       name: "",
       email: "",
       password: "",
-      role: "Doctor",
     },
   });
 
@@ -60,8 +60,8 @@ export const UserRegisterForm = () => {
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
           <section className="mb-12 space-y-4">
-            <h1 className="header">Hi there 👋</h1>
-            <p className="text-dark-700">Get started with appointments.</p>
+            <h1 className="header">Register an account👋</h1>
+            <p className="text-dark-700">Select your position to register.</p>
           </section>
   
           <CustomFormField
@@ -114,9 +114,9 @@ export const UserRegisterForm = () => {
             control={form.control}
             name="password"
             label="Password"
-            placeholder=""
-            iconSrc="/assets/icons/email.svg"
-            iconAlt="email"
+            placeholder="********"
+            iconSrc="/assets/icons/password.svg"
+            iconAlt="password"
           />
   
           <SubmitButton isLoading={isLoading}>Register</SubmitButton>

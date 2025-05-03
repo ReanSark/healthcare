@@ -1,9 +1,7 @@
 import Image from "next/image";
-// eslint-disable-next-line import/order
 import Link from "next/link";
 
 // import { PatientForm } from "@/components/forms/PatientForm";
-
 import { UserRegisterForm } from "@/components/forms/UserRegisterForm";
 import { PasskeyModal } from "@/components/PasskeyModal";
 
@@ -27,16 +25,16 @@ const Home = ({ searchParams }: SearchParamProps) => {
           {/* <PatientForm /> */}
           <UserRegisterForm />
 
-          <div className="text-14-regular mt-3 flex">
+          <div className="text-14-regular mt-3 flex justify-between">
             <p className="justify-items-end text-dark-600 xl:text-left">
-              Do not have an account? 
-            </p>
-            <Link href="/register" className="text-green-500">
-              Register
+              Already have an account? <Link href="/" className="text-green-500">
+              Log In
             </Link>
+            </p>
+            
           </div>
 
-          <div className="text-14-regular mt-10 flex justify-between">
+          <div className="text-14-regular mt-20 flex justify-between">
             <p className="justify-items-end text-dark-600 xl:text-left">
               © 2025 CamCare
             </p>
