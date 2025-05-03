@@ -1,11 +1,13 @@
 import * as sdk from "node-appwrite";
 
+// lib/appwrite.constants.ts
+export const DATABASE_ID: string = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID ?? "677aaa16003251a96ebc";
+export const USER_COLLECTION_ID: string = process.env.NEXT_PUBLIC_APPWRITE_USERS_COLLECTION_ID ?? "6815f5a5003774dda828";
+
 export const {
   NEXT_PUBLIC_ENDPOINT: ENDPOINT,
   PROJECT_ID,
   API_KEY,
-  DATABASE_ID,
-  USER_COLLECTION_ID,
   PATIENT_COLLECTION_ID,
   DOCTOR_COLLECTION_ID,
   APPOINTMENT_COLLECTION_ID,

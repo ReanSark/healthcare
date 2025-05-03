@@ -1,5 +1,14 @@
 import { Models } from "node-appwrite";
 
+export type UserRole = "Receptionist" | "Doctor" | "Nurse" | "Pharmacist" | "Inventory";
+
+export interface UserProfile extends Models.Document {
+  userId: string;
+  email: string;
+  fullName: string;
+  role: UserRole;
+}
+
 export interface Patient extends Models.Document {
   userId: string;
   name: string;
