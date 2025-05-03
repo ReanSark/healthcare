@@ -101,6 +101,7 @@ export const getRecentAppointmentList = async () => {
 };
 
 //  SEND SMS NOTIFICATION
+/*
 export const sendSMSNotification = async (userId: string, content: string) => {
   try {
     // https://appwrite.io/docs/references/1.5.x/server-nodejs/messaging#createSms
@@ -115,6 +116,7 @@ export const sendSMSNotification = async (userId: string, content: string) => {
     console.error("An error occurred while sending sms:", error);
   }
 };
+*/
 
 //  UPDATE APPOINTMENT
 export const updateAppointment = async ({
