@@ -27,8 +27,8 @@ const Home = ({ searchParams }: SearchParamProps) => {
 
           <div className="text-14-regular mt-3 flex justify-between">
             <p className="justify-items-end text-dark-600 xl:text-left">
-              Already have an account? <Link href="/" className="text-green-500">
-              Log In
+              Do not have an account? <Link href="/" className="text-green-500">
+              Register Now
             </Link>
             </p>
             

@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 export const UserRegisterFormValidation = z.object({
+  role: z.enum(["Receptionist", "Doctor", "Nurse", "Pharmacist", "Inventory"]),
   name: z
     .string()
     .min(2, "Name must be at least 2 characters")
@@ -10,7 +11,6 @@ export const UserRegisterFormValidation = z.object({
   .string()
   .min(8, "Password must be at least 8 characters")
   .max(50, "Password must be at most 50 characters"),
-  role: z.enum(["Receptionist", "Doctor", "Nurse", "Pharmacist", "Inventory"]),
 });
 
 export const UserFormValidation = z.object({

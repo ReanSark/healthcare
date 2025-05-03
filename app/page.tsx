@@ -29,10 +29,10 @@ const Home = ({ searchParams }: SearchParamProps) => {
 
           <div className="text-14-regular mt-3 flex">
             <p className="justify-items-end text-dark-600 xl:text-left">
-              Do not have an account? 
+              Already have an account? 
             </p>
             <Link href="/register" className="text-green-500">
-              Register
+              Login
             </Link>
           </div>
 
