@@ -36,7 +36,7 @@ const RegisterForm = ({ user }: { user: User }) => {
       ...PatientFormDefaultValues,
       name: user.name,
       email: user.email,
-      // phone: user.phone,
+      phone: user.phone,
     },
   });
 
