@@ -46,7 +46,8 @@ export const UserRegisterForm = () => {
   
         if (newUser) {
           alert('Registration successful!');
-          router.push(`/users/${newUser.$id}/login`);
+          router.push(`/lol`);
+          /* router.push(`/users/${newUser.$id}/login`); */
         }
       } catch (error) {
         console.log(error);

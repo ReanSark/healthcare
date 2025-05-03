@@ -1,4 +1,5 @@
 export const GenderOptions = ["Male", "Female", "Other"];
+export const RoleOptions = ["Receptionist", "Doctor", "Nurse", "Pharmacist", "Inventory"];
 
 export const PatientFormDefaultValues = {
   firstName: "",

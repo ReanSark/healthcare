@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const Login = () => {
+const Lol = () => {
 
   return (
     <div className="flex h-screen max-h-screen">
@@ -32,4 +32,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Lol;
