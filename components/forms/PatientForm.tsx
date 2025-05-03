@@ -23,7 +23,7 @@ export const PatientForm = () => {
     defaultValues: {
       name: "",
       email: "",
-      phone: "",
+      /* phone: "", */
     },
   });
 
@@ -34,7 +34,7 @@ export const PatientForm = () => {
       const user = {
         name: values.name,
         email: values.email,
-        phone: values.phone,
+        /* phone: values.phone, */
       };
 
       const newUser = await createUser(user);
@@ -77,13 +77,13 @@ export const PatientForm = () => {
           iconAlt="email"
         />
 
-        <CustomFormField
+        {/* <CustomFormField
           fieldType={FormFieldType.PHONE_INPUT}
           control={form.control}
           name="phone"
           label="Phone number"
           placeholder="(555) 123-4567"
-        />
+        /> */}
 
         <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
       </form>
